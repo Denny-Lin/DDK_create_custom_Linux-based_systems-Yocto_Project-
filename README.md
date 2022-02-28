@@ -18,7 +18,7 @@ bitbake core-image-minimal <br/>
 
 WARNING: Host distribution "Ubuntu-20.04" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution. <br/>
 
-##Recommended distribution
+## Recommended distribution
 Ubuntu 16.04 (LTS) <br/>
 Ubuntu 18.04 (LTS) <br/>
 Ubuntu 19.04 &nbsp;
