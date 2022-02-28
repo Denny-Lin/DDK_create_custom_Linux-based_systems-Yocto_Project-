@@ -18,10 +18,30 @@ bitbake core-image-minimal <br/>
 
 WARNING: Host distribution "Ubuntu-20.04" has not been validated with this version of the build system; you may possibly experience unexpected failures. It is recommended that you use a tested distribution. <br/>
 
-## Recommended distribution
+|       |   ^~~~~ <br/>
+| make[3]: *** [Makefile:1842: freadahead.o] Error 1 <br/>
+| make[3]: *** Waiting for unfinished jobs.... <br/>
+
+## Recommended distributions
 Ubuntu 16.04 (LTS) <br/>
 Ubuntu 18.04 (LTS) <br/>
 Ubuntu 19.04 &nbsp;
 
 # Run on QEMU
 runqemu qemuarm &nbsp;
+
+# How to add layer?
+1.Download the layer <br/>
+http://layers.openembedded.org/layerindex/branch/master/layers/ <br/>
+ 
+![image](https://user-images.githubusercontent.com/67073582/155921078-0992ef3d-b0f3-45cf-88b9-e4422a8676fe.png) &nbsp;
+
+2.Add the layer (BBLAYERS ?=) <br/>
+/home/parallels/Desktop/poky/build/conf/ bblayers.conf <br/>
+ 
+![image](https://user-images.githubusercontent.com/67073582/155921328-b8101e2f-60fc-4845-9590-4b15edc11a44.png) &nbsp;
+
+3.Test the layer <br/>
+bitbake-layers show-layers &nbsp;
+
+
